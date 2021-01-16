@@ -1,4 +1,5 @@
-// app.js
+import config from './config'
+
 App({
   onLaunch() {
     // 展示本地存储能力
