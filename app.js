@@ -7,21 +7,21 @@ App({
         userInfo: null
     },
     onLaunch(options) {
-        console.debug('生命周期函数--监听小程序初始化' + JSON.stringify(options))
+        console.log('生命周期函数--监听小程序初始化' + JSON.stringify(options))
         this.systemInfo();
         this.checkSession();
         this.getuserInfo();
 
         // 小程序主动更新
         this.updateManager();
-        console.debug('App名称：' + this.globalData.appName)
-        console.debug('系统参数：' + JSON.stringify(this.globalData.systemInfo))
+        console.log('App名称：' + this.globalData.appName)
+        console.log('系统参数：' + JSON.stringify(this.globalData.systemInfo))
     },
     onShow: function () {
-        console.debug('生命周期函数--监听小程序显示')
+        console.log('生命周期函数--监听小程序显示')
     },
     onHide: function () {
-        console.debug('生命周期函数--监听小程序隐藏')
+        console.log('生命周期函数--监听小程序隐藏')
     },
     checkSession: function () {
         // 登录
